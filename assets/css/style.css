@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+@font-face {
+  font-family: "Bellota";
+  src: url("../fonts/bellota_regular_macroman/Bellota-Regular-webfont.woff");
+}
+
+body {
+  font-family: "Bellota";
+}
+/*# sourceMappingURL=style.css.map */
