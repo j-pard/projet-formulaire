@@ -8,50 +8,77 @@
       <meta name="author" content="Jonathan PARDONS">
       <meta name="author" content="Léna BENOIT">
       <meta name="organization" content="BeCode">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <!--<link rel="stylesheet" href="/assets/css/style.css">-->
+      <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">-->
       <script src="https://kit.fontawesome.com/126bbe9047.js" crossorigin="anonymous"></script>
       
       <title>Hackers Poulette</title>
 </head>
 <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
       <header>
-            <nav></nav>
-            <h1>Hackers</h1>
-            <h2>Best ref ds la vente de rasberry</h2>
-            <figure>
-                  <img src="" alt="">
-            </figure>
-            <article>
-                  <h4>Ce mois-ci</h4>
-                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consectetur atque! Necessitatibus, omnis velit iusto alias ipsam numquam sint laudantium totam eius aut corrupti consectetur dolorum odio maiores fugiat natus.</p>
-                  <button></button>
-            </article>
+            <section class="jumbotron jumbotron-fluid">
+                  <article class="container">
+                        <h1>Hackers</h1>
+                        <h2>Best ref ds la vente de rasberry</h2>
+                        <figure>
+                              <img src="" alt="">
+                        </figure>
+                        <h4>Ce mois-ci</h4>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consectetur atque! Necessitatibus, omnis velit iusto alias ipsam numquam sint laudantium totam eius aut corrupti consectetur dolorum odio maiores fugiat natus.</p>
+                        <button></button>         
+                  </article>
+            </section>
       </header>
       <main>
-            <section id="products">
-                  <h3>Produits</h3>
-                  <article>
-                        <img src="" alt="">
+            <section class="container-fluid p-5" id="products">            
+                  <article class="container" >
+                        <h3 > Produits</h3>
+                        <img src="" alt="???">
                         <p>description produit</p>
                         <button>Plus d'info</button>
                         <button>Commander x 6</button>
                   </article>
             </section>
-            <section id="who">
+            <section class="container-fluid p-5" id="who">
+
+                  <article class="container">
                   <h3>Qui sommes-nous?</h3>
                   <figure>
                         <img src="" alt="???">
                   </figure>
-                  <article>
+                  
                         <p>NOS VALEURS TEXT ETC</p>
                   </article>           
             </section>
-            <section id="contact">
-
-
-                  
-            </section>
+            
       </main>
-      <footer>
+      <footer  class="container-fluid">
             
       </footer>
       
