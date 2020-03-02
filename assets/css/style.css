@@ -16,4 +16,21 @@ body {
 body {
   font-family: "Bellota";
 }
+
+body form input, body form select, body form textarea {
+  display: block;
+  margin: 5px;
+}
+
+body form textarea {
+  resize: none;
+}
+
+body form .form-btn {
+  padding: 5px 8px;
+}
+
+body form input[type="checkbox"] {
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */

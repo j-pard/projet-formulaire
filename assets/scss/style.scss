@@ -7,4 +7,24 @@
 
 body {
       font-family: "Bellota";
+
+      form {
+            input, select, textarea {
+                  display: block;
+                  margin: 5px;
+            }
+
+            textarea {
+                  resize: none;
+            }
+
+            .form-btn {
+                  padding: 5px 8px;
+            }
+
+            input[type="checkbox"] {
+                  display: inline-block;
+            }
+
+      }
 }
