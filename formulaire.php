@@ -8,7 +8,7 @@
 </head>
 <body>
      <h3>Formulaire</h3>
-      <form action="" method="POST">
+      <form action="message.php" method="POST">
             <select name="gender" id="gender" required>
                   <option value="">-- Gender --</option>
                   <option value="male">Male</option>
@@ -40,34 +40,5 @@
 
             </form>
 
-            <?php
-                  function sanitize($input) {
-                        $input = trim($input);
-                        $input = filter_var($input, FILTER_SANITIZE_STRING);
-                        return $input;
-                  }
-
-                  if(isset($_POST["submit"])) {
-
-                        $sending = [
-                              $gender = sanitize($_POST["gender"]),
-                              $nationality = sanitize($_POST["nationality"]),
-                              $firstname = sanitize($_POST["firstname"]),
-                              $lastname = sanitize($_POST["lastname"]),
-                              $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL),
-                              $subject = sanitize($_POST["subject"]),
-                              $message = sanitize($_POST["message"]),
-                              $copy = $_POST["copy"]
-                        ];
-
-                        if($gender != "" && $nationality != "" && $firstname != "" && $lastname != "" && email != "" && $subject != "" && $message != "") {
-                              print_r($sending);
-                              echo "<p class='success'>Votre demande à été envoyée et sera traîtée dans les plus brefs délais, merci.</p>";
-                        }
-                        else {
-                              echo "</p class='error'>Impossible d'envoyer votre demande, veuillez remplir tous les champs.</p>";
-                        }
-                  }
-            ?>
 </body>
 </html>
