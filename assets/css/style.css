@@ -33,4 +33,9 @@ body form .form-btn {
 body form input[type="checkbox"] {
   display: inline-block;
 }
+
+body nav {
+  height: 100px;
+  background: black;
+}
 /*# sourceMappingURL=style.css.map */
