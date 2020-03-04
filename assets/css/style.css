@@ -16,4 +16,24 @@ body {
 body {
   font-family: "Bellota";
 }
+
+body .fa-twitter {
+  color: #00acee;
+}
+
+body .fa-dribble {
+  color: #EA4C89;
+}
+
+body .fa-google-plus-g {
+  color: #dd4b39;
+}
+
+body a:hover {
+  color: blueviolet;
+}
+
+body .fa-linkedin {
+  color: #0e76a8;
+}
 /*# sourceMappingURL=style.css.map */

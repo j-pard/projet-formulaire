@@ -7,4 +7,28 @@
 
 body {
       font-family: "Bellota";
+
+      .fa-twitter{
+            color: $twitter;
+            
+      }
+      
+      .fa-dribble{
+            color: $dribbble;
+      }
+
+      .fa-google-plus-g{
+            color: $google-plus;
+
+           
+      }
+
+       a:hover{
+                  color: blueviolet;
+            }
+
+      .fa-linkedin{
+            color: $linkedIn;
+      }
+
 }
