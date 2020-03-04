@@ -36,6 +36,11 @@ body form input[type="checkbox"] {
 
 body nav {
   height: 100px;
-  background: black;
+}
+
+body #kit {
+  float: right;
+  width: 35%;
+  height: 35%;
 }
 /*# sourceMappingURL=style.css.map */
