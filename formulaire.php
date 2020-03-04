@@ -9,36 +9,46 @@
 <body>
      <h3>Formulaire</h3>
       <form action="message.php" method="POST">
-            <select name="gender" id="gender" required>
-                  <option value="">-- Gender --</option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                  <option value="other">Other</option>
-            </select>
+            <label class="inline-label" for="gender">Civilité : 
+                  <select name="gender" id="gender" required>
+                        <option value="">-- Genre --</option>
+                        <option value="male">Mr.</option>
+                        <option value="female">Mme.</option>
+                        <option value="other">Autre</option>
+                  </select>
+            </label>
 
-            <?php 
-            include("./ressources/nationality.html");
-            ?>
+            <label class="inline-label" for="nationality">Nationalité: 
+                  <?php 
+                        include("./ressources/nationality.html");
+                  ?>
+            </label>
 
-            <input type="text" name="lastname" id="lastname" placeholder="Nom" required>
-            <input type="text" name="firstname" id="firstname" placeholder="Prénom" required>
-            <input type="email" name="email" id="email" placeholder="exemple@email.org" required>
+            <label class="inline-label" for="lastname">Nom: <input type="text" name="lastname" id="lastname" placeholder="Nom" required></label>
+            <label class="inline-label" for="firstname">Prénom: <input type="text" name="firstname" id="firstname" placeholder="Prénom" required></label>
+            <label class="inline-label" for="email">Email: <input type="email" name="email" id="email" placeholder="exemple@email.org" required></label>
 
-            <select name="subject" id="subject" required>
-                  <option value="commands">Suivi de commande</option>
-                  <option value="technical">Informations techniques</option>
-                  <option value="aftersale">Après-vente</option>
-                  <option value="other">Autre</option>
-            </select>
+            <label for="subject">Objet: 
+                  <select class="break" name="subject" id="subject" required>
+                        <option value="commands">Suivi de commande</option>
+                        <option value="technical">Informations techniques</option>
+                        <option value="aftersale">Après-vente</option>
+                        <option value="other">Autre</option>
+                  </select>
+            </label>
             
-            <textarea name="message" id="message" placeholder="Votre message" cols="70" rows="10" required></textarea>
-            <input type="checkbox" name="copy" id="copy" checked>
-            <label for="copy">Envoyer une copie par mail</label>
+            <label for="message">Message: 
+                  <textarea class="break" name="message" id="message" placeholder="Votre message" required></textarea>
+            </label>
+            <label for="copy"><input type="checkbox" name="copy" id="copy" checked> Envoyer une copie par mail</label>
+            
+            <div id="buttons">
+                  <input class="form-btn" type="reset" name="reset" value="Réinitialiser">
+                  <input class="form-btn" id="submit" type="submit" name="submit" value="Envoyer" disabled="true">
+            </div>
 
-            <input class="form-btn" type="reset" name="reset" value="Réinitialiser">
-            <input class="form-btn" type="submit" name="submit" value="Envoyer">
+      </form>
 
-            </form>
-
+      <script src="./assets/js/script.js"></script>
 </body>
 </html>

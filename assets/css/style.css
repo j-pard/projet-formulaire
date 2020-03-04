@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -17,20 +19,67 @@ body {
   font-family: "Bellota";
 }
 
-body form input, body form select, body form textarea {
+body form {
+  width: 400px;
+}
+
+body form label {
   display: block;
   margin: 5px;
 }
 
+body form label input {
+  border: 1px solid darkgray;
+}
+
+body form label .break {
+  display: block;
+  width: 100%;
+}
+
+body form label.inline-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body form label.inline-label input, body form label.inline-label select {
+  width: 200px;
+}
+
 body form textarea {
+  width: 100%;
+  height: 100px;
   resize: none;
+}
+
+body form #buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 20px;
 }
 
 body form .form-btn {
   padding: 5px 8px;
-}
-
-body form input[type="checkbox"] {
-  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */

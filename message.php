@@ -3,6 +3,7 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./assets/css/style.css">
       <title>Message</title>
 </head>
 <body>
@@ -47,5 +48,9 @@
       }
 
       ?>
+
+      <form action="formulaire.php">
+            <button class="form-btn">Retour</button>
+      </form>
 </body>
 </html>
