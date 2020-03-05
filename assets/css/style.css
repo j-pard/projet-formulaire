@@ -225,10 +225,37 @@ body #contact h2 {
 }
 
 body footer p {
-  font-size: larger;
+  font-size: medium;
 }
 
 body #poulette {
   color: #15c5bd;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes bounce {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+body #bat {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 /*# sourceMappingURL=style.css.map */

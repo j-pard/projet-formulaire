@@ -245,7 +245,7 @@ body {
       footer{
 
             p{
-                  font-size: larger;
+                  font-size: medium;
             }
       }
 
@@ -255,9 +255,20 @@ body {
 
 
       }
+      @keyframes bounce{
+           from {opacity: 0%;}
+       
+           to   {opacity: 100%;}
+      }
+
+
+      #bat{
+            animation-name: bounce;
+            animation-duration: 5s;
+            animation-fill-mode: both;
+      }
       
-
-
+      
 }
 
 
