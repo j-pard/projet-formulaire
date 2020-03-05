@@ -40,7 +40,6 @@
             <label for="message">Message: 
                   <textarea class="break" name="message" id="message" placeholder="Votre message" required></textarea>
             </label>
-            <label for="copy"><input type="checkbox" name="copy" id="copy" checked> Envoyer une copie par mail</label>
             
             <div id="buttons">
                   <input class="form-btn" type="reset" name="reset" value="Réinitialiser">
