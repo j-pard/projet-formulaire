@@ -18,8 +18,8 @@
 </head>
 <body>
       <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light font-weight-bold">
-                  <a class="navbar-brand " href="#"><img class="w-25 h-25"src="assets/img/hackers-poulette-logo.png" alt="image hacker poulette"></a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light font-weight-bold ">
+                  <a class="navbar-brand" href="#who"><img class="h-100 w-100"src="assets/img/hackers-poulette-logo.png" alt="image hacker poulette"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -27,42 +27,80 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item active text-left">
-                        <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#jumbo">Accueil<span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Produits</a>
+                        <a class="nav-link" href="#products">Produits</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Qui sommes-nous?</a>
+                        <a class="nav-link " href="#who" tabindex="-1" aria-disabled="true">Qui sommes-nous?</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                       </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                       <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      <button class="btn btn-outline-light font-weight-bold my-2 my-sm-0" type="submit">Search</button>
                     </form>
                   </div>
                 </nav>
-            <section class="jumbotron jumbotron-fluid mb-2">
-                  <article class="container">
-                        <h1>Hackers Poulette</h1>
-                        <h2>Best ref ds la vente de rasberry</h2>
-                        <figure>
-                              <img id="kit"  src="assets/img/kit.jpg" alt="kit rasb">
+            <section class="jumbotron jumbotron-fluid  p-3 text-center border shadow-sm  ">
+                  <article id="jumbo" class="container-fluid row p-3">
+                        <div class=" col-lg-6 text-center">
+                              <h1 class="mb-3 font-weight-bold">Hackers Poulette</h1>
+                              <h2 class="mb-4">Best selling reference for<br>Rasberry accessories</h2>
+                              <h4 class="mb-4 font-weight-bold"> Ce mois-ci</h4>
+                              <p id="kitdescribe" class="text-justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consectetur atque!
+                               Necessitatibus, omnis velit iusto alias ipsam numquam sint laudantium totam eius aut corrupti consectetur dolorum odio maiores fugiat natus.
+                              Cqui qui galere juste pour centrer un texte? C'est moiiiii</p>
+                              <button class="btn btn-outline-light font-weight-bold mb-2">Voir le kit</button>    
+                        </div>
+                        <figure class="col-lg-5 text-center">
+                              <img class="rounded mx-auto d-block" id="kit" src="assets/img/kit.jpg" alt="kit rasb">
                         </figure>
-                        <h4 >Ce mois-ci</h4>
-                        <p class="w-50 h-50"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consectetur atque! Necessitatibus, omnis velit iusto alias ipsam numquam sint laudantium totam eius aut corrupti consectetur dolorum odio maiores fugiat natus.</p>
-                        <button class="btn">Voir le kit</button>         
+                                
                   </article>
             </section>
       </header>
       <main>
             <section class="container-fluid p-5 text-center" id="products">            
                   <article class="container" >
-                        <h3> Produits</h3>
+                        <h2 class="font-weight-bold"> Produits</h2>
                   </article>
             </section>
-            <section class="card-group mr-5 ml-5"">
-                  <div class="card w-25 m-4">
+            <section class="row text-center">
+                  <div class="col-lg-3 card mx-auto my-auto" >
+                        <div class="view overlay ">
+                              <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+                              alt="Card image cap">
+                              <a href="#!">
+                              <div class="mask rgba-white-slight"></div>
+                              </a>
+                        </div>
+                        <div class="card-body ">
+                              <h4 class="card-title">Nom du Produit</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                              content.</p>
+                              <a href="#" class="btn btn-outline-light font-weight-bold">Plus</a>
+                        </div>
+                  </div>
+                  <div class="col-lg-3 card  mx-auto my-auto" >
+                        <div class="view overlay ">
+                              <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+                              alt="Card image cap">
+                              <a href="#!">
+                              <div class="mask rgba-white-slight"></div>
+                              </a>
+                        </div>
+                        <div class="card-body ">
+                              <h4 class="card-title">Nom du Produit</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                              content.</p>
+                              <a href="#" class="btn btn-outline-light font-weight-bold">Plus</a>
+                        </div>
+                  </div>
+                  <div class="col-lg-3 card  mx-auto my-auto">
                         <div class="view overlay">
                               <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
                               alt="Card image cap">
@@ -70,57 +108,27 @@
                               <div class="mask rgba-white-slight"></div>
                               </a>
                         </div>
-                        <div class="card-body">
+                        <div class=" card-body">
                               <h4 class="card-title">Nom du Produit</h4>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                               content.</p>
-                              <a href="#" class="btn btn-primary">Plus</a>
+                              <a href="#" class="btn btn-outline-light font-weight-bold">Plus</a>
                         </div>
                   </div>
-                  <div class="card w-25 m-4">
-                        <div class="view overlay">
-                              <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
-                              alt="Card image cap">
-                              <a href="#!">
-                              <div class="mask rgba-white-slight"></div>
-                              </a>
-                        </div>
-                        <div class="card-body">
-                              <h4 class="card-title">Nom du Produit</h4>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                              content.</p>
-                              <a href="#" class="btn btn-primary">Plus</a>
-                        </div>
-                  </div>
-                  <div class="card w-25 m-4">
-                        <div class="view overlay">
-                              <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
-                              alt="Card image cap">
-                              <a href="#!">
-                              <div class="mask rgba-white-slight"></div>
-                              </a>
-                        </div>
-                        <div class="card-body">
-                              <h4 class="card-title">Nom du Produit</h4>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                              content.</p>
-                              <a href="#" class="btn btn-primary">Plus</a>
-                        </div>
-                  </div>
-                  
-                  
             </section>
             
             
             <section class="container-fluid p-5" id="who">
-
-                  <article class="container">
-                  <h3>Qui sommes-nous?</h3>
-                  <figure>
-                        <img src="" alt="???">
-                  </figure>
-                  
-                        <p>NOS VALEURS TEXT ETC</p>
+                  <h2 class="font-weight-bold text-center">Qui sommes-nous?</h2>
+                  <article class="row container-fluid">
+                        <div id="describeQ" class="col-lg-6 col-md-12 text-justify">
+                              <p>Chez Hackers Poulette, nous nous intéressons à tout ce qui a trait à la technologie, qu'il s'agisse de construire de nouveaux outils et d'aider les gens à enseigner l'informatique, de faire des recherches sur la façon dont les jeunes apprennent à créer avec la technologie ou de réfléchir au rôle que la technologie joue dans nos vies et dans la société. Aujourd'hui, j'écris sur notre habitude de remplacer les appareils par des versions plus récentes juste pour le plaisir.</p>
+                        </div>
+                        
+                        <figure class="col-lg-6 col-md-12">
+                              <img src="assets/img/hackers-poulette-logo.png" alt="logo hacker poulette">
+                        </figure>
+                        
                   </article>           
             </section>
             <section class="container-fluid p-5" id="contact">
@@ -179,7 +187,7 @@
                           </form>
               
                           <div class="text-center text-md-center mt-4">
-                              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                              <a class="btn btn-outline-light font-weight-bold" onclick="document.getElementById('contact-form').submit();">Send</a>
                           </div>
                           <div class="status"></div>
                       </div>

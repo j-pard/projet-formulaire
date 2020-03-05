@@ -5,6 +5,10 @@
 @import "_headings.scss";
 @import "_fonts.scss";
 
+*{
+      font-family: "Bellota";
+}
+
 body {
       font-family: "Bellota";
 
@@ -29,16 +33,68 @@ body {
       }
 
       nav{
-            height: 100px;
+            height: 95px;
       
 
       }
 
       #kit{
-        
-            float: right;
-            
-            width: 35%;
-            height: 35%;
+            border: $blue 4px solid;
+            width: 65%;
+            height: auto;
+            // margin: 20px;
       }
+
+      #kitdescribe{
+            width: 50%;
+            height: auto;
+            margin: auto;
+            margin-bottom:5%;
+      }
+
+
+      h1{
+            color: $blue;
+      }
+
+
+
+      figure{
+            display: grid;
+            justify-content: right;
+            align-content: center;
+            padding: 0;
+            margin: 0;
+      }
+
+      #jumbo{
+            padding: 0;
+            margin: 0;
+      }
+
+      .navbar-brand{
+            width: 10%;
+            height: auto;
+
+      }
+
+      .btn{
+            background-color: $blue;
+            border: $blueF 1px solid;
+      }
+
+      #describeQ{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+      }
+
+      img{
+            width: 80%;
+      }
+    
+
 }
+
+
+
