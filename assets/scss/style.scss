@@ -12,6 +12,7 @@
 body {
       font-family: "Bellota";
 
+
       form {
             input, select, textarea {
                   display: block;
@@ -32,11 +33,7 @@ body {
 
       }
 
-      nav{
-            height: 95px;
       
-
-      }
 
       #kit{
             border: $blue 4px solid;
@@ -55,6 +52,7 @@ body {
 
       h1{
             color: $blue;
+            text-shadow: teal 1px 1px 1px;
       }
 
 
@@ -67,14 +65,31 @@ body {
             margin: 0;
       }
 
+      .jumbotron{
+            margin-bottom: 0;
+
+            h1{
+                  font-size: 50px;
+            }
+      }
+
       #jumbo{
+           
             padding: 0;
             margin: 0;
+
+            p{
+                  font-size: large;
+            }
       }
 
       .navbar-brand{
-            width: 10%;
-            height: auto;
+            margin: 0;
+            padding: 0;
+            width: 140px ;
+            // height: 80px;
+
+            
 
       }
 
@@ -87,12 +102,161 @@ body {
             display: grid;
             justify-content: center;
             align-items: center;
+            // padding-right: auto;
+            // padding-left: auto;
       }
 
       img{
             width: 80%;
       }
-    
+
+      .fa-twitter{
+            color: $twitter;
+            
+      }
+      
+      .fa-dribble{
+            color: $dribbble;
+      }
+
+      .fa-google-plus-g{
+            color: $google-plus;
+
+           
+      }
+
+       a i:hover{
+                  color: grey;
+            }
+
+      .fa-linkedin{
+            color: $linkedIn;
+      }
+
+      #product{
+           
+            justify-content: center;
+            align-content: center;
+
+      
+      }
+
+      #products{
+
+            h2{
+                  color: $blue;
+                  text-shadow: teal 1px 1px 1px;
+            }
+      }
+
+      
+
+      .card{
+            min-width: auto;
+            max-width: max-content;
+            min-height: auto;
+            max-height: max-content;
+            border: $blueF 1px dashed;
+            padding: 0;
+
+            img{
+                  width: 271px;
+                  height: 253px;
+            }
+      }
+
+      .card-body{
+            min-width: auto;
+            max-width: max-content;
+            min-height: auto;
+            max-height: max-content;
+            
+      }
+
+      #who{
+
+            background-color: $blue;
+            color: white;
+            font-weight: bold;
+
+            h2{
+                  text-shadow: teal 2px 1px 2px;
+
+
+            }
+
+            
+
+            p{
+                  font-size: 25px;
+                  text-shadow: teal 1px 1px 2px;
+            }
+
+
+            figure{
+                  // width: auto;
+                  background-color: white;
+                  border-radius: 70%;
+                  border: teal 1px solid;
+
+                  img{
+                        width: 50%;
+                        
+
+                  }
+            }
+
+            div{
+                  padding:0;
+            }
+
+            article{
+                  padding: 0;
+                  margin: 0;
+            }
+      }
+
+
+
+            i.fas{
+                  color: $blue;
+                  
+            }
+      
+      #site a{
+            color: $blue;
+      }
+
+            
+      #hack{
+                  color: $blue;
+            }
+
+      #contact{
+
+
+
+            h2{
+                  color: $blue;
+                  text-shadow: teal 1px 1px 1px;
+            }
+      }
+
+      footer{
+
+            p{
+                  font-size: larger;
+            }
+      }
+
+      #poulette{
+
+            color: $blue;
+
+
+      }
+      
+
 
 }
 

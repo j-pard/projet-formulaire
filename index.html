@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="./assets/css/style.css">
+     
       <meta name="author" content="Jonathan PARDONS">
       <meta name="author" content="Léna BENOIT">
       <meta name="organization" content="BeCode">
@@ -13,13 +13,14 @@
       
       <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">-->
       <script src="https://kit.fontawesome.com/126bbe9047.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="./assets/css/style.css">
       
       <title>Hackers Poulette</title>
 </head>
 <body>
       <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light font-weight-bold ">
-                  <a class="navbar-brand" href="#who"><img class="h-100 w-100"src="assets/img/hackers-poulette-logo.png" alt="image hacker poulette"></a>
+                  <a class="navbar-brand " href="#who"><img class="ml-3" src="assets/img/hackers-poulette-logoresize.png" alt="image hacker poulette"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -50,7 +51,7 @@
                         <div class=" col-lg-6 text-center">
                               <h1 class="mb-3 font-weight-bold">Hackers Poulette</h1>
                               <h2 class="mb-4">Best selling reference for<br>Rasberry accessories</h2>
-                              <h4 class="mb-4 font-weight-bold"> Ce mois-ci</h4>
+                              <h4 class="mb-4 font-weight-bold"> Ce mois-ci:</h4>
                               <p id="kitdescribe" class="text-justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consectetur atque!
                                Necessitatibus, omnis velit iusto alias ipsam numquam sint laudantium totam eius aut corrupti consectetur dolorum odio maiores fugiat natus.
                               Cqui qui galere juste pour centrer un texte? C'est moiiiii</p>
@@ -63,53 +64,99 @@
                   </article>
             </section>
       </header>
-      <main>
-            <section class="container-fluid p-5 text-center" id="products">            
+      <main class="border">
+            <section class="container-fluid  text-center " id="products">            
                   <article class="container" >
-                        <h2 class="font-weight-bold"> Produits</h2>
+                        <h2 class="mt-5 font-weight-bold">Produits en vente</h2>
                   </article>
             </section>
-            <section class="row text-center">
-                  <div class="col-lg-3 card mx-auto my-auto" >
-                        <div class="view overlay ">
-                              <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
-                              alt="Card image cap">
-                              <a href="#!">
-                              <div class="mask rgba-white-slight"></div>
-                              </a>
-                        </div>
-                        <div class="card-body ">
-                              <h4 class="card-title">Nom du Produit</h4>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                              content.</p>
-                              <a href="#" class="btn btn-outline-light font-weight-bold">Plus</a>
-                        </div>
-                  </div>
-                  <div class="col-lg-3 card  mx-auto my-auto" >
-                        <div class="view overlay ">
-                              <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
-                              alt="Card image cap">
-                              <a href="#!">
-                              <div class="mask rgba-white-slight"></div>
-                              </a>
-                        </div>
-                        <div class="card-body ">
-                              <h4 class="card-title">Nom du Produit</h4>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                              content.</p>
-                              <a href="#" class="btn btn-outline-light font-weight-bold">Plus</a>
-                        </div>
-                  </div>
-                  <div class="col-lg-3 card  mx-auto my-auto">
+            <section id="product" class="row text-center p-5 shadow-sm m-0">
+                  
+                  <div class="col-lg-3 card m-3" >
                         <div class="view overlay">
-                              <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+                              <img class="card-img-top" src="assets/img/fan.jpg"
+                              alt="Card image cap">
+                              <a href="#!">
+                              <div class="mask rgba-white-slight"></div>
+                              </a>
+                        </div>
+                        <div class="card-body ">
+                              <h4 class="card-title">2,5€</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                              content.</p>
+                              <a href="#" class="btn btn-outline-light font-weight-bold">Plus</a>
+                        </div>
+                  </div>
+                  <div class="col-lg-3 card m-3" >
+                        <div class="view overlay ">
+                              <img class="card-img-top" src="assets/img/hdmi.jpg"
+                              alt="Card image cap">
+                              <a href="#!">
+                              <div class="mask rgba-white-slight"></div>
+                              </a>
+                        </div>
+                        <div class="card-body ">
+                              <h4 class="card-title">12€</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                              content.</p>
+                              <a href="#" class="btn btn-outline-light font-weight-bold">Plus</a>
+                        </div>
+                  </div>
+                  <div class="col-lg-3 card m-3">
+                        <div class="view overlay">
+                              <img class="card-img-top" src="assets/img/case.jpg"
                               alt="Card image cap">
                               <a href="#!">
                               <div class="mask rgba-white-slight"></div>
                               </a>
                         </div>
                         <div class=" card-body">
-                              <h4 class="card-title">Nom du Produit</h4>
+                              <h4 class="card-title">9€</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                              content.</p>
+                              <a href="#" class="btn btn-outline-light font-weight-bold">Plus</a>
+                        </div>
+                  </div>
+                  <div class="col-lg-3 card m-3">
+                        <div class="view overlay">
+                              <img class="card-img-top" src="assets/img/card.jpg"
+                              alt="Card image cap">
+                              <a href="#!">
+                              <div class="mask rgba-white-slight"></div>
+                              </a>
+                        </div>
+                        <div class=" card-body">
+                              <h4 class="card-title">3€</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                              content.</p>
+                              <a href="#" class="btn btn-outline-light font-weight-bold">Plus</a>
+                        </div>
+                  </div>
+                  <div class="col-lg-3 card m-3">
+                        <div class="view overlay">
+                              <img class="card-img-top" src="assets/img/rasp.jpg"
+                              alt="Card image cap">
+                              <a href="#!">
+                              <div class="mask rgba-white-slight"></div>
+                              </a>
+                        </div>
+                        <div class=" card-body">
+                              <h4 class="card-title">5,5€</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                              content.</p>
+                              <a href="#" class="btn btn-outline-light font-weight-bold">Plus</a>
+                        </div>
+                  </div>
+                  <div class="col-lg-3 card m-3">
+                        <div class="view overlay">
+                              <img class="card-img-top" src="assets/img/heat.jpg"
+                              alt="Card image cap">
+                              <a href="#!">
+                              <div class="mask rgba-white-slight"></div>
+                              </a>
+                        </div>
+                        <div class=" card-body">
+                              <h4 class="card-title">19€</h4>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                               content.</p>
                               <a href="#" class="btn btn-outline-light font-weight-bold">Plus</a>
@@ -118,36 +165,36 @@
             </section>
             
             
-            <section class="container-fluid p-5" id="who">
+            <section class="container-fluid p-5 shadow-lg" id="who">
                   <h2 class="font-weight-bold text-center">Qui sommes-nous?</h2>
-                  <article class="row container-fluid">
-                        <div id="describeQ" class="col-lg-6 col-md-12 text-justify">
+                  <article class="row container-fluid text-center">
+                        <div id="describeQ" class="col-lg-8 col-md-12 text-right p-5">
                               <p>Chez Hackers Poulette, nous nous intéressons à tout ce qui a trait à la technologie, qu'il s'agisse de construire de nouveaux outils et d'aider les gens à enseigner l'informatique, de faire des recherches sur la façon dont les jeunes apprennent à créer avec la technologie ou de réfléchir au rôle que la technologie joue dans nos vies et dans la société. Aujourd'hui, j'écris sur notre habitude de remplacer les appareils par des versions plus récentes juste pour le plaisir.</p>
                         </div>
                         
-                        <figure class="col-lg-6 col-md-12">
-                              <img src="assets/img/hackers-poulette-logo.png" alt="logo hacker poulette">
+                        <figure class="col-lg-4 col-md-12">
+                              <img class="w-100" src="assets/img/hackers-poulette-logo.png" alt="logo hacker poulette">
                         </figure>
                         
                   </article>           
             </section>
-            <section class="container-fluid p-5" id="contact">
-                  <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+            <section class="container-fluid p-5 shadow-lg" id="contact">
+                  <h2 class="h2-responsive font-weight-bold text-center my-4">Contact us</h2>
                   <p class="text-center w-responsive mx-auto mb-5">Vous avez des questions ? Des avis? N'hésitez pas à nous contacter via
                         ce formulaire, nos équipes prendront le soin d'y répondre aussi vite que possible.</p>
                   <div class="row">
                         <div class="col-md-3 text-center">
                               <ul class="list-unstyled mb-0">
                                   <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                                      <p>San Francisco, CA 94126, USA</p>
+                                      <p>Coq d'Or, Charleroi, BE</p>
                                   </li>
                   
                                   <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                                      <p>+ 01 234 567 89</p>
+                                      <p>+ 02 284 547 23</p>
                                   </li>
                   
                                   <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                                      <p>contact@mdbootstrap.com</p>
+                                      <p>hackerspoulette@gmail.com</p>
                                   </li>
                               </ul>
                           </div>
@@ -195,18 +242,18 @@
                   </div>
               </section>        
       </main>
-      <footer class="page-footer font-small bg-light lighten-3 pt-4 container-fluid">
+      <footer class="page-footer shadow-sm font-small bg-light lighten-3 pt-4 container-fluid">
             <div class="container text-center text-md-left">
                   <div class="row">
                         <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
-                              <h5 class="font-weight-bold text-uppercase mb-4">Hackers Poulette</h5>
-                              <p>Here you can use rows and columns to organize your footer content.</p>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
-                              esse
-                              quasi, veritatis totam voluptas nostrum.</p>
+                              <h5 id="poulette" class="font-weight-bold text-uppercase mb-4">Hackers Poulette</h5>
+                              <p>Commandes, précommandes, retours, nous mettons tout en place pour convenir à vos envies.</p>
+                              <p>Cela fait maintenant de nombreuses années que nos clients ont une totale confiance
+                              en nos services. Toute notre équipe ainsi que le directeur vous remercie chaleureusement
+                              </p>
                         </div>
                         <hr class="clearfix w-100 d-md-none">
-                        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+                        <div id="site" class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
                               <h5 class="font-weight-bold text-uppercase mb-4">SITE</h5>
                               <ul class="list-unstyled">
                               <li>
@@ -241,7 +288,7 @@
                               </li>
                               <li>
                               <p>
-                                    <i class="fas fa-envelope mr-3"></i> hackerspoulette@gmail.com</p>
+                                    <i class="fas fa-envelope mr-3"></i>hackerspoulette@gmail.com</p>
                               </li>
                               <li>
                               <p>
@@ -271,8 +318,9 @@
                         </div>
                   </div>
             </div>
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:<a href="#"> HackersPoulette.com</a></div>          
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:<a id="hack" href="#"> HackersPoulette.com</a></div>          
       </footer>
       
 </body>
+
 </html>
