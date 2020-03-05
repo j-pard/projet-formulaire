@@ -3,14 +3,12 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">   
       <meta name="author" content="Jonathan PARDONS">
       <meta name="author" content="Léna BENOIT">
       <meta name="organization" content="BeCode">
-      <!--<link rel="stylesheet" href="/assets/css/style.css">-->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
       <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">-->
       <script src="https://kit.fontawesome.com/126bbe9047.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="./assets/css/style.css">
@@ -19,6 +17,12 @@
 </head>
 <body>
       <header>
+            <div class="alert text-center cookiealert" role="alert">
+                  <b>Tu aimes les cookies?</b> &#x1F36A; Nous utilisons des cookies pour vous assurez la meilleure expérience possible.<a href="https://cookiesandyou.com/" target="_blank">Plus</a>
+                  <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+                      I have no choices
+                  </button>
+            </div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light font-weight-bold ">
                   <a class="navbar-brand " href="#who"><img class="ml-3" src="assets/img/hackers-poulette-logoresize.png" alt="image hacker poulette"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +64,6 @@
                         <figure class="col-lg-5 text-center">
                               <img class="rounded mx-auto d-block" id="kit" src="assets/img/kit.jpg" alt="kit rasb">
                         </figure>
-                                
                   </article>
             </section>
       </header>
@@ -320,7 +323,7 @@
             </div>
             <div class="footer-copyright text-center py-3">© 2020 Copyright:<a id="hack" href="#"> HackersPoulette.com</a></div>          
       </footer>
-      
+      <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
 </body>
 
 </html>
