@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
       <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">-->
+      <link rel="stylesheet" href="./assets/js/script.js">
       <script src="https://kit.fontawesome.com/126bbe9047.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="./assets/css/style.css">
       
@@ -17,14 +18,16 @@
 </head>
 <body>
       <header>
-            <div class="alert text-center cookiealert" role="alert">
+            <!---Cookies--->
+            <section class="alert text-center cookiealert" role="alert">
                   <b>Tu aimes les cookies?</b> &#x1F36A; Nous utilisons des cookies pour vous assurez la meilleure expérience possible.<a href="https://cookiesandyou.com/" target="_blank">Plus</a>
                   <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
                       I have no choices
                   </button>
-            </div>
+            </section>
+            <!---Bar Nav--->
             <nav class="navbar navbar-expand-lg navbar-light bg-light font-weight-bold ">
-                  <a class="navbar-brand " href="#who"><img class="ml-3" src="assets/img/hackers-poulette-logoresize.png" alt="logo hacker poulette"></a>
+                  <a class="navbar-brand" tabindex="n" href="#who"><img class="ml-3" src="assets/img/hackers-poulette-logoresize.png" alt="logo hacker poulette"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -32,16 +35,16 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item active text-left">
-                        <a class="nav-link" href="#jumbo">Accueil<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" tabindex="h" href="#jumbo">Accueil<span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#products">Produits</a>
+                        <a class="nav-link"  tabindex="p" href="#products">Produits</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link " href="#who" tabindex="-1" aria-disabled="true">Qui sommes-nous?</a>
+                        <a class="nav-link " tabindex="w" href="#who" tabindex="-1" aria-disabled="true">Qui sommes-nous?</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" tabindex="c" href="#contact">Contact</a>
                       </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
@@ -68,13 +71,13 @@
             </section>
       </header>
       <main class="border">
+            <!-----Section produits---->
             <section class="container-fluid  text-center " id="products">            
                   <article class="container" >
                         <h2 class="mt-5 font-weight-bold">Produits en vente</h2>
                   </article>
             </section>
             <section id="product" class="row text-center p-5 shadow-sm m-0">
-                  
                   <div class="col-lg-3 card m-3" >
                         <div class="view overlay">
                               <img class="card-img-top" src="assets/img/fan.jpg"
@@ -160,8 +163,7 @@
                         </div>
                   </div>
             </section>
-            
-            
+            <!---Section Qui sommes-nous/WHO----> 
             <section class="container-fluid p-5 shadow-lg" id="who">
                   <h2 class="font-weight-bold text-center">Qui sommes-nous?</h2>
                   <article class="row container-fluid text-center">
@@ -175,6 +177,7 @@
                         
                   </article>           
             </section>
+            <!---FORMULAIRE CONTACT--->
             <section class="container-fluid p-5 shadow-lg" id="contact">
                   <h2 class="h2-responsive font-weight-bold text-center my-4">Contact us</h2>
                   <p class="text-center w-responsive mx-auto mb-5">Vous avez des questions ? Des avis? N'hésitez pas à nous contacter via
@@ -231,9 +234,10 @@
                           </form>
               
                           <div class="text-center text-md-center mt-4">
-                              <a class="btn btn-outline-light font-weight-bold" onclick="document.getElementById('contact-form').submit();">Send</a>
+                              <a class="btn btn-outline-light font-weight-bold" tabindex="s" onclick="document.getElementById('contact-form').submit();">Send</a>
                           </div>
                           <div class="status"></div>
+                          <!-- <button onclick="topFunction()" id="myBtn" title="up">Up</button> -->
                       </div>
                       
                   </div>
@@ -255,17 +259,17 @@
                               <ul class="list-unstyled">
                               <li>
                               <p>
-                                    <a href="#products">Produits</a>
+                                    <a href="#products" tabindex="p">Produits</a>
                               </p>
                               </li>
                               <li>
                               <p>
-                                    <a href="#who">A propos</a>
+                                    <a href="#who" tabindex="w">A propos</a>
                               </p>
                               </li>
                               <li>
                               <p>
-                                    <a href="#contact">Liens</a>
+                                    <a href="#contact" tabindex="c">Liens</a>
                               </p>
                               </li>
                               <!-- <li>
@@ -300,16 +304,16 @@
                         <hr class="clearfix w-100 d-md-none">
                         <div class="col-md-2 col-lg-3 text-center mx-auto my-4">
                               <h5 class="font-weight-bold text-uppercase mb-4">Suivez-nous</h5>
-                              <a href="https://www.facebook.com" type="button" class="btn-floating btn-fb">
+                              <a href="https://www.facebook.com" tabindex="f" type="button" class="btn-floating btn-fb">
                               <i class="fab fa-facebook-f fa-2x"></i>
                               </a>
-                              <a href="https://www.twitter.com" type="button" class="btn-floating btn-tw">
+                              <a href="https://www.twitter.com" tabindex="t" type="button" class="btn-floating btn-tw">
                               <i class="fab fa-twitter fa-2x"></i>
                               </a>
-                              <a href="https://www.google.com" type="button" class="btn-floating btn-gplus">
+                              <a href="https://www.google.com" tabindex="g" type="button" class="btn-floating btn-gplus">
                               <i class="fab fa-google-plus-g fa-2x"></i>
                               </a>
-                              <a href="https://www.dribble.com" type="button" class="btn-floating btn-dribbble">
+                              <a href="https://www.dribble.com" tabindex="d" type="button" class="btn-floating btn-dribbble">
                               <i class="fab fa-dribbble fa-2x"></i>
                               </a>
                         </div>
@@ -319,8 +323,8 @@
       </footer>
       <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
