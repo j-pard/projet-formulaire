@@ -19,7 +19,7 @@
 <body>
       <header>
             <!---Cookies--->
-            <section class="alert text-center cookiealert" role="alert">
+            <section id="alert" class="alert text-center cookiealert" role="alert">
                   <b>Tu aimes les cookies?</b> &#x1F36A; Nous utilisons des cookies pour vous assurez la meilleure expérience possible.<a href="https://cookiesandyou.com/" target="_blank">Plus</a>
                   <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
                       I have no choices
@@ -62,7 +62,7 @@
                               <p id="kitdescribe" class="text-justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consectetur atque!
                                Necessitatibus, omnis velit iusto alias ipsam numquam sint laudantium totam eius aut corrupti consectetur dolorum odio maiores fugiat natus.
                               Cqui qui galere juste pour centrer un texte? C'est moiiiii</p>
-                              <button class="btn btn-outline-light font-weight-bold mb-2">Voir le kit</button>    
+                              <a href="#products"><button class="btn btn-outline-light font-weight-bold mb-2">Voir le kit</button></a> 
                         </div>
                         <figure class="col-lg-5 text-center">
                               <img class="rounded mx-auto d-block" id="kit" src="assets/img/kit.jpg" alt="kit rasberry">
@@ -177,6 +177,8 @@
                         
                   </article>           
             </section>
+
+            
             <!---FORMULAIRE CONTACT--->
             <section class="container-fluid p-5 shadow-lg" id="contact">
                   <h2 class="h2-responsive font-weight-bold text-center my-4">Contact us</h2>
@@ -241,8 +243,16 @@
                       </div>
                       
                   </div>
-              </section>        
+              </section>
       </main>
+      <section class="container-fluid p-0" id="video">
+            <div class="parallax">
+                  <p>zzzz</p>
+                  <!-- <video src="assets/img/Futuristic - 896.mp4" autoplay muted loop></video> -->
+            </div>
+            
+
+      </section>
       <footer class="page-footer shadow-sm font-small bg-light lighten-3 pt-4 container-fluid">
             <div class="container text-center text-md-left">
                   <div class="row">
@@ -310,10 +320,10 @@
                               <a href="https://www.twitter.com" tabindex="t" type="button" class="btn-floating btn-tw">
                               <i class="fab fa-twitter fa-2x"></i>
                               </a>
-                              <a href="https://www.google.com" tabindex="g" type="button" class="btn-floating btn-gplus">
-                              <i class="fab fa-google-plus-g fa-2x"></i>
+                              <a href="https://www.linkedin.com" tabindex="l" type="button" class="btn-floating btn-in">
+                              <i class="fab fa-linkedin-in fa-2x"></i>
                               </a>
-                              <a href="https://www.dribble.com" tabindex="d" type="button" class="btn-floating btn-dribbble">
+                              <a href="https://www.dribbble.com" tabindex="d" type="button" class="btn-floating btn-dribbble">
                               <i class="fab fa-dribbble fa-2x"></i>
                               </a>
                         </div>

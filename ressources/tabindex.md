@@ -8,7 +8,7 @@ Section Contact : c ;
 
 Accès facebook : f;
 Accès twitter : t ;
-Accès google : g ;
+Accès linkedin : l ;
 Accès dribble: d ;
 
 Envoyer message: s ;
