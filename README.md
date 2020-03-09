@@ -3,8 +3,8 @@ Projet formatif : Création d'un site vitrine avec back-end PHP
 
 ## Who ?
 
-Jonathan Pardons : https://github.com/j-pard ;
-Léna Benoit : https://github.com/Lena4496 ;
+* Jonathan Pardons : https://github.com/j-pard ;
+* Léna Benoit : https://github.com/Lena4496 ;
 
 ## What's ? 
 
@@ -24,7 +24,7 @@ PMV Fini
 
 ## What's in ?
 
-HTML/CSS/SCSS/BOOTSTRAP/JS pour le front (texte,logo, image, video, animation,...)
-PHP pour le back (sanitization + validation + envoi + feedback + honeypot)
+- HTML/CSS/SCSS/BOOTSTRAP/JS pour le front (texte,logo, image, video, animation,...)
+- PHP pour le back (sanitization + validation + envoi + feedback + honeypot)
 
 
