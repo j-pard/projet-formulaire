@@ -182,8 +182,8 @@
                   <h2 class="h2-responsive font-weight-bold text-center my-4">Contact us</h2>
                   <p class="text-center w-responsive mx-auto mb-5">Vous avez des questions ? Des avis? N'hésitez pas à nous contacter via
                         ce formulaire, nos équipes prendront le soin d'y répondre aussi vite que possible.</p>
-                  <div id="form-cont" class="row">
-                        <div class="col-md-3 text-center">
+                  <div id="form-cont" class="row container-fluid">
+                        <div class="col-md-3 text-center d-flex align-items-center">
                               <ul class="list-unstyled mb-0">
                                   <li><i class="fas fa-map-marker-alt fa-2x"></i>
                                       <p>Coq d'Or, Charleroi, BE</p>
@@ -233,8 +233,8 @@
                               </label>
                               
                               <div id="buttons">
-                                    <input class="form-btn" type="reset" name="reset" value="Réinitialiser">
-                                    <input class="form-btn" id="submit" type="submit" name="submit" value="Envoyer" disabled="true">
+                                    <input class="btn btn-outline-light font-weight-bold" type="reset" name="reset" value="Réinitialiser">
+                                    <input class="btn btn-outline-light font-weight-bold" id="submit" type="submit" name="submit" value="Envoyer" disabled="true">
                               </div>
                   
                         </form>

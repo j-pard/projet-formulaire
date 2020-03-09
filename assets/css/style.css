@@ -23,6 +23,19 @@ body {
   font-family: "Bellota";
 }
 
+body #form-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body form#contact-form {
   width: 400px;
 }
@@ -54,6 +67,8 @@ body form#contact-form label.inline-label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #15c5bd;
+  font-weight: bold;
 }
 
 body form#contact-form label.inline-label input, body form#contact-form label.inline-label select {
@@ -83,8 +98,14 @@ body form#contact-form #buttons {
   padding: 5px 20px;
 }
 
-body form#contact-form .form-btn {
-  padding: 5px 8px;
+body form#contact-form #submit:disabled, body form#contact-form #submit[disabled] {
+  background-color: #109c95;
+  text-decoration: line-through;
+}
+
+body form#contact-form #submit:disabled:hover, body form#contact-form #submit[disabled]:hover {
+  -webkit-transform: none;
+          transform: none;
 }
 
 body #kit {
