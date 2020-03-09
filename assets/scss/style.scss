@@ -11,6 +11,12 @@
 
 body {
       font-family: "Bellota";
+
+      #form-cont {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+      }
       
       form#contact-form {
             width: 400px;
@@ -32,6 +38,8 @@ body {
                   flex-direction: row;
                   flex-wrap: nowrap;
                   justify-content: space-between;
+                  color: $blue;
+                  font-weight: bold;
                   input, select {
                         width: 200px;
                   }
@@ -54,8 +62,13 @@ body {
 
             }
 
-            .form-btn {
-                  padding: 5px 8px;
+            #submit:disabled, #submit[disabled] {
+                  background-color: $blueF;
+                  text-decoration: line-through;
+            }
+
+            #submit:disabled:hover, #submit[disabled]:hover {
+                  transform: none;
             }
       }
 
