@@ -75,10 +75,10 @@
                         <h2 class="mt-5 font-weight-bold">Produits en vente</h2>
                   </article>
             </section>
-            <section id="product" class="row text-center p-5 shadow-sm m-0">
+            <section id="product" class="row text-center p-1 p-md-5 shadow-sm m-0">
                   <div class="col-lg-3 card m-3" >
                         <div class="view overlay">
-                              <img class="card-img-top" src="assets/img/fan.jpg"
+                              <img class="card-img-top img-shop" src="assets/img/fan.jpg"
                               alt="Tournevis + ventilateur">
                               <a href="#!">
                               <div class="mask rgba-white-slight"></div>
@@ -92,7 +92,7 @@
                   </div>
                   <div class="col-lg-3 card m-3" >
                         <div class="view overlay ">
-                              <img class="card-img-top" src="assets/img/hdmi.jpg"
+                              <img class="card-img-top img-shop" src="assets/img/hdmi.jpg"
                               alt="Cable HDMI">
                               <a href="#!">
                               <div class="mask rgba-white-slight"></div>
@@ -106,7 +106,7 @@
                   </div>
                   <div class="col-lg-3 card m-3">
                         <div class="view overlay">
-                              <img class="card-img-top" src="assets/img/case.jpg"
+                              <img class="card-img-top img-shop" src="assets/img/case.jpg"
                               alt="Boitier rasberry">
                               <a href="#!">
                               <div class="mask rgba-white-slight"></div>
@@ -120,7 +120,7 @@
                   </div>
                   <div class="col-lg-3 card m-3">
                         <div class="view overlay">
-                              <img class="card-img-top" src="assets/img/card.jpg"
+                              <img class="card-img-top img-shop" src="assets/img/card.jpg"
                               alt="Carte SD">
                               <a href="#!">
                               <div class="mask rgba-white-slight"></div>
@@ -134,7 +134,7 @@
                   </div>
                   <div class="col-lg-3 card m-3">
                         <div class="view overlay">
-                              <img class="card-img-top" src="assets/img/rasp.jpg"
+                              <img class="card-img-top img-shop" src="assets/img/rasp.jpg"
                               alt="Carte mère rasberry">
                               <a href="#!">
                               <div class="mask rgba-white-slight"></div>
@@ -148,7 +148,7 @@
                   </div>
                   <div class="col-lg-3 card m-3">
                         <div class="view overlay">
-                              <img class="card-img-top" src="assets/img/heat.jpg"
+                              <img class="card-img-top img-shop" src="assets/img/heat.jpg"
                               alt="diffuseur chaleur">
                               <a href="#!">
                               <div class="mask rgba-white-slight"></div>
@@ -162,15 +162,15 @@
                   </div>
             </section>
             <!---Section Qui sommes-nous/WHO----> 
-            <section class="container-fluid p-5 shadow-lg" id="who">
+            <section class="container-fluid p-1 p-md-5 shadow-lg" id="who">
                   <h2 class="font-weight-bold text-center">Qui sommes-nous?</h2>
                   <article class="row container-fluid text-center">
-                        <div id="describeQ" class="col-lg-8 col-md-12 text-right p-5">
+                        <div id="describeQ" class="col-lg-8 col-md-12 text-right p-1 p-md-5">
                               <p>Chez Hackers Poulette, nous nous intéressons à tout ce qui a trait à la technologie, qu'il s'agisse de construire de nouveaux outils et d'aider les gens à enseigner l'informatique, de faire des recherches sur la façon dont les jeunes apprennent à créer avec la technologie ou de réfléchir au rôle que la technologie joue dans nos vies et dans la société. Aujourd'hui, j'écris sur notre habitude de remplacer les appareils par des versions plus récentes juste pour le plaisir.</p>
                         </div>
                         
                         <figure class="col-lg-4 col-md-12">
-                              <img class="w-100" src="assets/img/hackers-poulette-logo.png" alt="logo hacker poulette">
+                              <img  src="assets/img/hackers-poulette-logo.png" alt="logo hacker poulette">
                         </figure>
                         
                   </article>           
@@ -182,8 +182,8 @@
                   <h2 class="h2-responsive font-weight-bold text-center my-4">Contact us</h2>
                   <p class="text-center w-responsive mx-auto mb-5">Vous avez des questions ? Des avis? N'hésitez pas à nous contacter via
                         ce formulaire, nos équipes prendront le soin d'y répondre aussi vite que possible.</p>
-                  <div id="form-cont" class="row container-fluid">
-                        <div class="col-md-3 text-center d-flex align-items-center">
+                  <div id="form-cont" class="row ">
+                        <div id="list-cont" class="col-md-3 text-center d-flex align-items-center">
                               <ul class="list-unstyled mb-0">
                                   <li><i class="fas fa-map-marker-alt fa-2x"></i>
                                       <p>Coq d'Or, Charleroi, BE</p>
@@ -200,44 +200,44 @@
                         </div>
 
                         <form id="contact-form" action="message.php" method="POST">
-                              <label class="inline-label" for="gender">Civilité : 
-                                    <select name="gender" id="gender" required>
-                                          <option value="">-- Genre --</option>
-                                          <option value="male">Mr.</option>
-                                          <option value="female">Mme.</option>
-                                          <option value="other">Autre</option>
-                                    </select>
-                              </label>
-                  
-                              <label class="inline-label" for="nationality">Nationalité: 
-                                    <?php 
-                                          include("./ressources/nationality.html");
-                                    ?>
-                              </label>
-                  
-                              <label class="inline-label" for="lastname">Nom: <input type="text" name="lastname" id="lastname" placeholder="Nom" required></label>
-                              <label class="inline-label" for="firstname">Prénom: <input type="text" name="firstname" id="firstname" placeholder="Prénom" required></label>
-                              <label class="inline-label" for="email">Email: <input type="email" name="email" id="email" placeholder="exemple@email.org" required></label>
-                  
-                              <label for="subject">Objet: 
-                                    <select class="break" name="subject" id="subject" required>
-                                          <option value="commands">Suivi de commande</option>
-                                          <option value="technical">Informations techniques</option>
-                                          <option value="aftersale">Après-vente</option>
-                                          <option value="other">Autre</option>
-                                    </select>
-                              </label>
-                              
-                              <label for="message">Message: 
-                                    <textarea class="break" name="message" id="message" placeholder="Votre message" required></textarea>
-                              </label>
-                              
-                              <div id="buttons">
-                                    <input class="btn btn-outline-light font-weight-bold" type="reset" name="reset" value="Réinitialiser">
-                                    <input class="btn btn-outline-light font-weight-bold" id="submit" type="submit" name="submit" value="Envoyer" disabled="true">
-                              </div>
-                  
-                        </form>
+                                    <label class="inline-label" for="gender">Civilité : 
+                                          <select name="gender" id="gender" required>
+                                                <option value="">-- Genre --</option>
+                                                <option value="male">Mr.</option>
+                                                <option value="female">Mme.</option>
+                                                <option value="other">Autre</option>
+                                          </select>
+                                    </label>
+                        
+                                    <label class="inline-label" for="nationality">Nationalité: 
+                                          <?php 
+                                                include("./ressources/nationality.html");
+                                          ?>
+                                    </label>
+                        
+                                    <label class="inline-label" for="lastname">Nom: <input type="text" name="lastname" id="lastname" placeholder="Nom" required></label>
+                                    <label class="inline-label" for="firstname">Prénom: <input type="text" name="firstname" id="firstname" placeholder="Prénom" required></label>
+                                    <label class="inline-label" for="email">Email: <input type="email" name="email" id="email" placeholder="exemple@email.org" required></label>
+                        
+                                    <label for="subject">Objet: 
+                                          <select class="break" name="subject" id="subject" required>
+                                                <option value="commands">Suivi de commande</option>
+                                                <option value="technical">Informations techniques</option>
+                                                <option value="aftersale">Après-vente</option>
+                                                <option value="other">Autre</option>
+                                          </select>
+                                    </label>
+                                    
+                                    <label for="message">Message: 
+                                          <textarea class="break" name="message" id="message" placeholder="Votre message" required></textarea>
+                                    </label>
+                                    
+                                    <div id="buttons">
+                                          <input class="btn btn-outline-light font-weight-bold" type="reset" name="reset" value="Réinitialiser">
+                                          <input class="btn btn-outline-light font-weight-bold" id="submit" type="submit" name="submit" value="Envoyer" disabled="true">
+                                    </div>
+                        
+                              </form>
                       
                   </div>
               </section>

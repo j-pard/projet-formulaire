@@ -34,10 +34,13 @@ body #form-cont {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body form#contact-form {
-  width: 400px;
+  width: 500px;
+  max-width: 90%;
 }
 
 body form#contact-form label {
@@ -72,11 +75,13 @@ body form#contact-form label.inline-label {
 }
 
 body form#contact-form label.inline-label input, body form#contact-form label.inline-label select {
-  width: 200px;
+  width: 300px;
+  max-width: 40vw;
 }
 
 body form#contact-form textarea {
   width: 100%;
+  max-width: 90vw;
   height: 100px;
   resize: none;
 }
@@ -90,8 +95,8 @@ body form#contact-form #buttons {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -106,6 +111,15 @@ body form#contact-form #submit:disabled, body form#contact-form #submit[disabled
 body form#contact-form #submit:disabled:hover, body form#contact-form #submit[disabled]:hover {
   -webkit-transform: none;
           transform: none;
+}
+
+body #list-cont {
+  width: 500px;
+  text-align: center;
+}
+
+body #list-cont ul {
+  width: 100%;
 }
 
 body #kit {
@@ -127,8 +141,9 @@ body h1 {
 }
 
 body figure {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
@@ -228,8 +243,10 @@ body .card {
 }
 
 body .card img {
-  width: 271px;
-  height: 253px;
+  width: 100%;
+  max-width: 271px;
+  height: auto;
+  max-height: 253px;
 }
 
 body .card-body {
@@ -262,10 +279,22 @@ body #who figure {
   background-color: white;
   border-radius: 70%;
   border: teal 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body #who figure img {
-  width: 50%;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  max-height: 300px;
 }
 
 body #who div {
@@ -334,5 +363,40 @@ body video {
   height: 100%;
   background-size: auto;
   position: relative;
+}
+
+body #messager {
+  width: 500px;
+  max-width: 80%;
+  margin: 100px auto;
+  text-align: center;
+  padding: 20px;
+  border: 5px solid #15c5bd;
+  border-radius: 25px;
+}
+
+body #messager .btn-return {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #15c5bd;
+  padding: 8px 16px;
+  margin: 30px;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  #form-cont label.inline-label input, #form-cont label.inline-label select {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #form-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

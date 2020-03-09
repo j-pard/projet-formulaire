@@ -16,10 +16,12 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: center;
+            flex-wrap: wrap;
       }
       
       form#contact-form {
-            width: 400px;
+            width: 500px;
+            max-width: 90%;
             label {
                   display: block;
                   margin: 5px;
@@ -41,12 +43,14 @@ body {
                   color: $blue;
                   font-weight: bold;
                   input, select {
-                        width: 200px;
+                        width: 300px;
+                        max-width: 40vw;
                   }
             }
 
             textarea {
                   width: 100%;
+                  max-width: 90vw;
                   height: 100px;
                   resize: none;
             }
@@ -55,7 +59,7 @@ body {
                   width: 100%;
                   display: flex;
                   flex-direction: row;
-                  flex-wrap: nowrap;
+                  flex-wrap: wrap;
                   justify-content: space-between;
 
                   padding: 5px 20px;
@@ -69,6 +73,15 @@ body {
 
             #submit:disabled:hover, #submit[disabled]:hover {
                   transform: none;
+            }
+      }
+
+      #list-cont {
+            width: 500px;
+            text-align: center;
+
+            ul {
+                  width: 100%;
             }
       }
 
@@ -95,7 +108,7 @@ body {
 
 
       figure{
-            display: grid;
+            display: flex;
             justify-content: right;
             align-content: center;
             padding: 0;
@@ -200,8 +213,10 @@ body {
             padding: 0;
 
             img{
-                  width: 271px;
-                  height: 253px;
+                  width: 100%;
+                  max-width: 271px;
+                  height: auto;
+                  max-height: 253px;
             }
       }
 
@@ -234,14 +249,18 @@ body {
 
 
             figure{
-                  // width: auto;
                   background-color: white;
                   border-radius: 70%;
                   border: teal 1px solid;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
 
                   img{
-                        width: 50%;
-                        
+                        width: 100%;
+                        max-width: 300px;
+                        height: auto;
+                        max-height: 300px;
 
                   }
             }
@@ -320,5 +339,46 @@ body {
 
       }
 
-      
+      //MESSAGE.PHP
+
+      #messager {
+            width: 500px;
+            max-width: 80%;
+            margin: 100px auto;
+            text-align: center;
+            padding: 20px;
+
+            border: 5px solid $blue;
+            border-radius: 25px;
+            .btn-return {
+                  color: white;
+                  font-weight: bold;
+                  font-size: 20px;
+                  background-color: $blue;
+                  padding: 8px 16px;
+                  margin: 30px;
+                  border-radius: 20px;
+            }
+      }
+
+}
+
+@media only screen and (max-width: 500px) {
+      #form-cont {
+            label.inline-label {
+                  input, select {
+                        width: 200px;
+                  }
+            }
+      }
+}
+
+@media only screen and (max-width: 640px) {
+
+}
+
+@media only screen and (max-width: 1000px) {
+      #form-cont {
+            flex-direction: column;
+      }
 }

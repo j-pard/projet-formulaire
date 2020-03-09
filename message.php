@@ -15,6 +15,7 @@ require '../../../vendor/autoload.php';
       <title>Message</title>
 </head>
 <body>
+      <div id="messager">
       <?php
       function sanitize($input) {
             $input = trim($input);
@@ -43,7 +44,7 @@ require '../../../vendor/autoload.php';
                   else {
                         $sending[$i] = sanitize($sending[$i]);
                   }
-                  echo $sending[$i] . "<br>";
+                  //echo $sending[$i] . "<br>";
             }
 
             if($gender != "" && $nationality != "" && $firstname != "" && $lastname != "" && $email != "" && $subject != "" && $message != "") {
@@ -58,7 +59,7 @@ require '../../../vendor/autoload.php';
                   // SMTP::DEBUG_OFF = off (for production use)
                   // SMTP::DEBUG_CLIENT = client messages
                   // SMTP::DEBUG_SERVER = client and server messages
-                  $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+                  $mail->SMTPDebug = SMTP::DEBUG_OFF;
 
                   //Set the hostname of the mail server
                   $mail->Host = 'smtp.gmail.com';
@@ -96,6 +97,8 @@ require '../../../vendor/autoload.php';
 
 
                   if (!$mail->send()) {
+                        echo "Le message n'a pas été envoyé." . "<br>";
+                        echo "Si le problème, presiste, veuillez contacter l'administrateur." . "<br>" . "<br>";
                         echo 'Mailer Error: '. $mail->ErrorInfo;
                     } else {
                         echo $successMsg;
@@ -109,7 +112,9 @@ require '../../../vendor/autoload.php';
       ?>
 
       <form action="index.php">
-            <button class="form-btn">Retour</button>
+            <button class="btn-return">Retour</button>
       </form>
+</div>
+      
 </body>
 </html>
