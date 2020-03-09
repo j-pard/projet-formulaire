@@ -9,8 +9,6 @@
       <meta name="organization" content="BeCode">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
-      <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">-->
-      <link rel="stylesheet" href="./assets/js/script.js">
       <script src="https://kit.fontawesome.com/126bbe9047.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="./assets/css/style.css">
       
@@ -184,7 +182,7 @@
                   <h2 class="h2-responsive font-weight-bold text-center my-4">Contact us</h2>
                   <p class="text-center w-responsive mx-auto mb-5">Vous avez des questions ? Des avis? N'hésitez pas à nous contacter via
                         ce formulaire, nos équipes prendront le soin d'y répondre aussi vite que possible.</p>
-                  <div class="row">
+                  <div id="form-cont" class="row">
                         <div class="col-md-3 text-center">
                               <ul class="list-unstyled mb-0">
                                   <li><i class="fas fa-map-marker-alt fa-2x"></i>
@@ -199,48 +197,47 @@
                                       <p>hackerspoulette@gmail.com</p>
                                   </li>
                               </ul>
-                          </div>
-                      <div class="col-md-8 mb-md-0 mb-5">
-                          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                              <div class="row">
-                                  <div class="col-md-6 pb-3" >
-                                      <div class="md-form mb-0">
-                                          <input type="text" id="name" name="name" placeholder="Nom"  class="form-control">
-                                      </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="name" name="name" placeholder="Prénom"  class="form-control">
-                                    </div>
-                                </div>
-                                  <div class="col-md-6">
-                                      <div class="md-form mb-0">
-                                          <input type="text" id="email" name="email" placeholder="Email"  class="form-control">
-                                      </div>
-                                  </div>
+                        </div>
+
+                        <form id="contact-form" action="message.php" method="POST">
+                              <label class="inline-label" for="gender">Civilité : 
+                                    <select name="gender" id="gender" required>
+                                          <option value="">-- Genre --</option>
+                                          <option value="male">Mr.</option>
+                                          <option value="female">Mme.</option>
+                                          <option value="other">Autre</option>
+                                    </select>
+                              </label>
+                  
+                              <label class="inline-label" for="nationality">Nationalité: 
+                                    <?php 
+                                          include("./ressources/nationality.html");
+                                    ?>
+                              </label>
+                  
+                              <label class="inline-label" for="lastname">Nom: <input type="text" name="lastname" id="lastname" placeholder="Nom" required></label>
+                              <label class="inline-label" for="firstname">Prénom: <input type="text" name="firstname" id="firstname" placeholder="Prénom" required></label>
+                              <label class="inline-label" for="email">Email: <input type="email" name="email" id="email" placeholder="exemple@email.org" required></label>
+                  
+                              <label for="subject">Objet: 
+                                    <select class="break" name="subject" id="subject" required>
+                                          <option value="commands">Suivi de commande</option>
+                                          <option value="technical">Informations techniques</option>
+                                          <option value="aftersale">Après-vente</option>
+                                          <option value="other">Autre</option>
+                                    </select>
+                              </label>
+                              
+                              <label for="message">Message: 
+                                    <textarea class="break" name="message" id="message" placeholder="Votre message" required></textarea>
+                              </label>
+                              
+                              <div id="buttons">
+                                    <input class="form-btn" type="reset" name="reset" value="Réinitialiser">
+                                    <input class="form-btn" id="submit" type="submit" name="submit" value="Envoyer" disabled="true">
                               </div>
-                              <div class="row">
-                                  <div class="col-md-6">
-                                      <div class="md-form mb-0">
-                                          <input type="text" id="subject" name="subject" placeholder="Sujet" class="form-control">
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="row ">
-                                  <div class="col-md-6">
-                                      <div class="md-form">
-                                          <textarea type="text" id="message" name="message" rows="4"  placeholder="Message" class="form-control md-textarea"></textarea>
-                                      </div>
-                                  </div>
-                              </div>
-                          </form>
-              
-                          <div class="text-center text-md-center mt-4">
-                              <a class="btn btn-outline-light font-weight-bold" tabindex="s" onclick="document.getElementById('contact-form').submit();">Send</a>
-                          </div>
-                          <div class="status"></div>
-                          <!-- <button onclick="topFunction()" id="myBtn" title="up">Up</button> -->
-                      </div>
+                  
+                        </form>
                       
                   </div>
               </section>
@@ -326,10 +323,12 @@
             </div>
             <div class="footer-copyright text-center py-3">© 2020 Copyright:<a id="hack" href="#"> HackersPoulette.com</a></div>          
       </footer>
+
       <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
