@@ -99,7 +99,7 @@ require '../../../vendor/autoload.php';
                   if (!$mail->send()) {
                         echo "Le message n'a pas été envoyé." . "<br>";
                         echo "Si le problème, presiste, veuillez contacter l'administrateur." . "<br>" . "<br>";
-                        echo 'Mailer Error: '. $mail->ErrorInfo;
+                        echo 'Mailer Error: ' . "<p>" . $mail->ErrorInfo . "</p>";
                     } else {
                         echo $successMsg;
                     }

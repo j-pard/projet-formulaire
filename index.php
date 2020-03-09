@@ -163,7 +163,7 @@
             </section>
             <!---Section Qui sommes-nous/WHO----> 
             <section class="container-fluid p-1 p-md-5 shadow-lg" id="who">
-                  <h2 class="font-weight-bold text-center">Qui sommes-nous?</h2>
+                  <h2 class="font-weight-bold text-center m-4 m-md-1">Qui sommes-nous?</h2>
                   <article class="row container-fluid text-center">
                         <div id="describeQ" class="col-lg-8 col-md-12 text-right p-1 p-md-5">
                               <p>Chez Hackers Poulette, nous nous intéressons à tout ce qui a trait à la technologie, qu'il s'agisse de construire de nouveaux outils et d'aider les gens à enseigner l'informatique, de faire des recherches sur la façon dont les jeunes apprennent à créer avec la technologie ou de réfléchir au rôle que la technologie joue dans nos vies et dans la société. Aujourd'hui, j'écris sur notre habitude de remplacer les appareils par des versions plus récentes juste pour le plaisir.</p>
@@ -245,7 +245,7 @@
       <div class="container-fluid p-0" id="video">
             <video src="assets/img/futu.mp4" autoplay muted loop></video>
       </div>
-      <footer class="page-footer shadow-sm font-small bg-light lighten-3 pt-4 container-fluid">
+      <footer class="page-footer shadow-sm font-small lighten-3 pt-4 container-fluid">
             <div class="container text-center text-md-left">
                   <div class="row">
                         <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">

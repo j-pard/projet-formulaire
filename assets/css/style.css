@@ -323,6 +323,11 @@ body #contact h2 {
   text-shadow: teal 1px 1px 1px;
 }
 
+body footer {
+  background-color: #303030;
+  color: white;
+}
+
 body footer p {
   font-size: medium;
 }
@@ -373,6 +378,10 @@ body #messager {
   padding: 20px;
   border: 5px solid #15c5bd;
   border-radius: 25px;
+}
+
+body #messager p {
+  word-break: break-all;
 }
 
 body #messager .btn-return {

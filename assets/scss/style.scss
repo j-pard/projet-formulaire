@@ -302,8 +302,8 @@ body {
       }
 
       footer{
-
-
+            background-color: $dark;
+            color: white;
             p{
                   font-size: medium;
             }
@@ -350,6 +350,10 @@ body {
 
             border: 5px solid $blue;
             border-radius: 25px;
+
+            p {
+                  word-break: break-all;
+            }
             .btn-return {
                   color: white;
                   font-weight: bold;
