@@ -1,7 +1,8 @@
 # projet-formulaire
 Projet formatif : Création d'un site vitrine avec back-end PHP 
 
-* Github Page : https://lena4496.github.io/projet-formulaire2/ ;
+* Page: https://becode-formulaire.000webhostapp.com/
+* Formulaire non fonctionnel en ligne pour des raisons de sécurité évidentes.
 
 ## Who ?
 
